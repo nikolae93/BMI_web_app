@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
      <!-- End of Amita font -->
 
+     <!-- Neuton font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+     <!-- Font end -->
+    
+
      <!-- Custom CSS files -->
     <link rel="stylesheet" href="./main.css"/>
     <link rel="stylesheet" href="./font.css">
@@ -39,7 +46,30 @@
 
      <!-- Main section -->
     <section>
+        <form>
+            <h1 class="neuton-bold">BMI Calculator</h1>
+            <p>Enter your height, weight and measurements</p>
 
+            <div class="form_choise neuton-regular">
+            <label for="height">Enter height: </label>
+            <input type="number" min="0" name="height" id="height"/>
+            <select name="height_me">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+            </div>
+
+            <div class="form_choise neuton-regular">
+                <label for="weight">Enter weight: </label>
+                <input type="number" min="0" name="weight" id="weight"/>
+                <select name="weight_me">
+                    <option value="cm">kg</option>
+                </select>
+                </div>
+            
+            <button type="submit">Calculate</button>
+
+        </form>
     </section>
     <!-- End of the main section -->
 

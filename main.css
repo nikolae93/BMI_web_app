@@ -50,6 +50,19 @@ margin: 0;
   width: 100%;
   height: 84vh;
   background-color: var(--main-baige-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+ }
+
+ section form{
+  
+padding: 20px 0;
+ }
+
+ .form_choise{
+    margin: 10px 0;
  }
  /* END OF MAIN SECTION */
 
