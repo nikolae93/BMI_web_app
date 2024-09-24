@@ -1,28 +1,21 @@
+/*  */
+
+/* Global styles */
 *{
 padding: 0;
 margin: 0;
 }
+/* END */
 
+/* Defining main colors */
 :root{
     --main-baige-color: #eed9c4;
     --main-burgundy-color: #660033;
     --dark-burgundy-color: #330a1f;
 }
+/* End */
 
-
-/* #test_color{
-    color: #660033;
-} */
-
-/* {
-    
-   Main baige color: #eed9c4;
-   Main bugundy  color: #660033;
-   Burgundy darker color: #330a1f;
-
-
- */
-
+/* Header section */
  header{
   width: 100%;
   height: 8vh;
@@ -50,13 +43,17 @@ margin: 0;
     margin-right: 20px;
  }
 
+/* END OF HEADER SECTION */
 
+/* MAIN SECTION */
  section{
   width: 100%;
   height: 84vh;
   background-color: var(--main-baige-color);
  }
+ /* END OF MAIN SECTION */
 
+/* FOOTER SECTION */
  footer{
 width: 100%;
 height: 8vh;
@@ -67,4 +64,6 @@ text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
- }
+}
+
+/* END OF FOOTER SECTION */
