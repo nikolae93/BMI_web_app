@@ -52,22 +52,24 @@
 
             <div class="form_choise neuton-regular">
             <label for="height" class="neuton-bold">Enter height: </label>
-            <input type="number" min="0" name="height" id="height" class="form_input"/>
-            <select name="height_me" class="neuton-regular form_select">
-                <option value="cm" class="neuton-regular">cm</option>
+            <input type="number" min="0"  name="height" id="height" class="form_input"/>
+            <select id="height_me" name="height_me" class="neuton-regular form_select">
+                <option value="cm">cm</option>
                 <option value="m">m</option>
+                <option value="ft">ft</option>
+                <option value="in">in</option>
             </select>
             </div>
 
             <div class="form_choise neuton-regular">
                 <label for="weight" class="neuton-bold">Enter weight: </label>
                 <input type="number" min="0" name="weight" id="weight" class="form_input"/>
-                <select name="weight_me" class="neuton-regular form_select">
-                    <option class="neuton-regular" value="cm">kg</option>
+                <select id="weight_me" name="weight_me" class="neuton-regular form_select">
+                    <option class="neuton-regular" value="kg">kg</option>
                 </select>
                 </div>
             
-            <button type="submit_res" class="btn">Calculate</button>
+            <button id="submit_res" type="submit" class="btn">Calculate</button>
             <button id="reset_inputs" class="btn">Reset</button>
 
         </form>
