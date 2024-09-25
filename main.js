@@ -48,6 +48,18 @@ function calculateBMI(){
         hvalue = inTom(hvalue);
     }
 
+    if(hmeasure.trim()==="gr"){
+        hvalue = grTokg(hvalue);
+    }
+
+    if(hmeasure.trim()==="lb"){
+        hvalue = lbTokg(hvalue);
+    }
+
+    if(hmeasure.trim()==="oz"){
+        hvalue = ozTokg(hvalue);
+    }
+
 
 
 
@@ -78,4 +90,16 @@ function mToft(m){
 
 function inTom(inc){
   return inc *0.0254;
+}
+
+function grTokg(gr){
+   return gr/1000;
+}
+
+function lbTokg(lb){
+    return lb* 0.45359237;
+}
+
+function ozTokg(oz){
+    return oz * 0.0283495231;
 }
