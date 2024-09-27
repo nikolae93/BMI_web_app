@@ -1,15 +1,30 @@
 // console.log("JS connected");
 
-document.getElementById("reset_inputs").addEventListener("click",resetInputs);
-document.getElementById("submit_res").addEventListener("click",calculateBMI);
+document.getElementById("reset_inputs").addEventListener("click",(e)=>{e.preventDefault();resetInputs()});
+document.getElementById("submit_res").addEventListener("click",(e)=>{e.preventDefault();calculateBMI()});
 
 
 function resetInputs(){
     document.getElementById("height").value = "";
     document.getElementById("weight").value = "";
+    document.getElementById("res_txt").innerHTML="Please provide height and weight";
+    resetAnimations();
+
 }
 
+function resetAnimations(){
+    document.getElementById("res_txt").innerHTML="Please provide height and weight";
+    document.getElementById("res_brown").classList.remove("pulse_it");
+    document.getElementById("res_green").classList.remove("pulse_it");
+    document.getElementById("res_yellow").classList.remove("pulse_it");
+    document.getElementById("res_orange").classList.remove("pulse_it");
+    document.getElementById("res_red").classList.remove("pulse_it");
+}
+
+
 function calculateBMI(){
+
+    resetAnimations();
 
     let hvalue = document.getElementById("height").value;
     let wvalue = document.getElementById("weight").value;
@@ -65,8 +80,27 @@ function calculateBMI(){
 
     let BMI = (wvalue/(hvalue*hvalue)).toFixed(2);
 
+    document.getElementById("res_txt").innerHTML=`Your BMI is: ${BMI}`;
 
-    alert("Your BMI is: "+BMI);
+    if(BMI<18.5){
+        document.getElementById('res_brown').classList.add('pulse_it');
+        return;
+    }else if
+    (BMI<25 && BMI>=18.5){
+        document.getElementById('res_green').classList.add('pulse_it');
+        return;
+    }else if(BMI<30 && BMI>=25){
+        document.getElementById('res_yellow').classList.add('pulse_it');
+        return;
+    }else if(BMI<35 && BMI>=30){
+        document.getElementById('res_orange').classList.add('pulse_it');
+        return;
+    }else if(BMI>=35){
+        document.getElementById('res_red').classList.add('pulse_it');
+        return;
+    }
+
+   // alert("Your BMI is: "+BMI);
 
 }
 
