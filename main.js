@@ -48,22 +48,23 @@ function calculateBMI(){
         hvalue = inTom(hvalue);
     }
 
-    if(hmeasure.trim()==="gr"){
-        hvalue = grTokg(hvalue);
+    if(wmeasure.trim()==="gr"){
+        wvalue = grTokg(wvalue);
     }
 
-    if(hmeasure.trim()==="lb"){
-        hvalue = lbTokg(hvalue);
+    if(wmeasure.trim()==="lb"){
+        wvalue = lbTokg(wvalue);
     }
 
-    if(hmeasure.trim()==="oz"){
-        hvalue = ozTokg(hvalue);
+    if(wmeasure.trim()==="oz"){
+        wvalue = ozTokg(wvalue);
     }
 
 
 
 
-    let BMI = wvalue/(hvalue*hvalue);
+    let BMI = (wvalue/(hvalue*hvalue)).toFixed(2);
+
 
     alert("Your BMI is: "+BMI);
 
