@@ -1,5 +1,13 @@
 // console.log("JS connected");
 
+document.addEventListener("keypress",(e)=>{
+     
+     if(e.key==="Enter"){
+        e.preventDefault();
+        calculateBMI();
+     }
+});
+
 document.getElementById("reset_inputs").addEventListener("click",(e)=>{e.preventDefault();resetInputs()});
 document.getElementById("submit_res").addEventListener("click",(e)=>{e.preventDefault();calculateBMI()});
 
