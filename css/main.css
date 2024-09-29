@@ -123,6 +123,7 @@ height: 100%;
     justify-content: space-evenly;
     /* align-items: center; */
     text-align: center;
+    /* overflow: hidden; */
 }
 
 .res_cont{
@@ -208,4 +209,30 @@ justify-content: center;
 
 
 
-  
+@media screen and (max-width: 730px) {
+    .form_input{
+        width: 300px;
+    }
+
+    .res_cont{
+        height: 30px;
+        line-height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .form_input{
+        width: 150px;
+    }
+}  
+
+@media screen and (max-width: 380px) {
+    .form_input{
+        width: 70px;
+    }
+
+    .res_cont{
+        height: 15px;
+        line-height: 15px;
+    }
+  }
