@@ -88,6 +88,8 @@ height: 100%;
     border-radius: 5px;
 }
 
+/* Global button styles */
+
 .btn{
     width: 120px;
     height: 40px;
@@ -103,6 +105,8 @@ height: 100%;
    background-color: #eed9c4;
    color: #330a1f;
 }
+
+/* End of button class */
 
 .margin-top-bottom{
     margin-top: 15px;
@@ -172,6 +176,7 @@ height: 100%;
     background: radial-gradient(circle at 10.6% 22.1%, rgb(206, 18, 18) 0%, rgb(122, 21, 21) 100.7%);
 }
 
+/* Result animation */
 
 @keyframes pulse {
 	0% {
@@ -208,6 +213,7 @@ justify-content: center;
 /* END OF FOOTER SECTION */
 
 
+/* Responsive design */
 
 @media screen and (max-width: 730px) {
     .form_input{
@@ -236,3 +242,5 @@ justify-content: center;
         line-height: 15px;
     }
   }
+
+/* END OF Responsive design */

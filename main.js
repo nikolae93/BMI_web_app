@@ -1,5 +1,5 @@
-// console.log("JS connected");
 
+// Calculate on enter
 document.addEventListener("keypress",(e)=>{
      
      if(e.key==="Enter"){
@@ -8,10 +8,11 @@ document.addEventListener("keypress",(e)=>{
      }
 });
 
+// Buttons listeners
 document.getElementById("reset_inputs").addEventListener("click",(e)=>{e.preventDefault();resetInputs()});
 document.getElementById("submit_res").addEventListener("click",(e)=>{e.preventDefault();calculateBMI()});
 
-
+// Functions that clears the inputs for new entry
 function resetInputs(){
     document.getElementById("height").value = "";
     document.getElementById("weight").value = "";
@@ -20,6 +21,7 @@ function resetInputs(){
 
 }
 
+// Function to clear remaining animations 
 function resetAnimations(){
     document.getElementById("res_txt").innerHTML="Please provide height and weight";
     document.getElementById("res_brown").classList.remove("pulse_it");
@@ -29,7 +31,7 @@ function resetAnimations(){
     document.getElementById("res_red").classList.remove("pulse_it");
 }
 
-
+// Main BMI calculation function 
 function calculateBMI(){
 
     resetAnimations();
@@ -148,7 +150,7 @@ function ozTokg(oz){
 }
 
 
-
+// Modal functionality
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
